@@ -19,11 +19,26 @@
     "@babel/preset-react": "^7.23.0"
   },
   "build": {
-    "appId": "com.nervous-in-church",
+    "appId": "com.nervousinchurch.app",
     "productName": "Nervous in Church",
     "icon": "assets/icon.icns",
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "src/**/*",
+      "assets/**/*"
+    ],
     "mac": {
       "category": "public.app-category.productivity",
+      "icon": "assets/icon.icns",
+      "target": [
+        "dmg",
+        "dir"
+      ]
+    },
+    "dmg": {
+      "title": "Nervous in Church",
       "icon": "assets/icon.icns"
     }
   }
