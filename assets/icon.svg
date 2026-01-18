@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <circle cx="512" cy="512" r="480" fill="#2D2D2A"/>
+  <circle cx="512" cy="512" r="480" fill="none" stroke="#D97757" stroke-width="8" opacity="0.3"/>
+  <g transform="translate(215, 320)">
+    <ellipse cx="295" cy="200" rx="200" ry="100" fill="#D97757"/>
+    <ellipse cx="130" cy="220" rx="70" ry="90" fill="#D97757"/>
+    <rect x="60" y="100" width="120" height="100" rx="10" fill="#D97757"/>
+    <rect x="20" y="130" width="80" height="50" rx="5" fill="#D97757"/>
+    <polygon points="80,100 65,50 95,50" fill="#D97757"/>
+    <polygon points="140,100 125,50 155,50" fill="#D97757"/>
+    <ellipse cx="60" cy="195" rx="40" ry="35" fill="#D97757"/>
+    <rect x="100" y="280" width="35" height="90" rx="5" fill="#D97757"/>
+    <rect x="150" y="280" width="35" height="90" rx="5" fill="#D97757"/>
+    <rect x="380" y="260" width="40" height="110" rx="5" fill="#D97757"/>
+    <rect x="435" y="260" width="40" height="110" rx="5" fill="#D97757"/>
+    <rect x="480" y="120" width="25" height="70" rx="5" fill="#D97757"/>
+    <circle cx="100" cy="145" r="10" fill="#2D2D2A"/>
+  </g>
+</svg>

@@ -12,6 +12,7 @@ function createWindow() {
     height: 800,
     backgroundColor: '#2D2D2A',
     titleBarStyle: 'hiddenInset',
+    icon: path.join(__dirname, 'assets', 'icon.png'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: true,
@@ -126,7 +127,13 @@ ipcMain.on('set-current-path', (event, filePath) => {
   currentFilePath = filePath;
 });
 
-app.whenReady().then(createWindow);
+app.whenReady().then(() => {
+  // Set dock icon on macOS
+  if (process.platform === 'darwin') {
+    app.dock.setIcon(path.join(__dirname, 'assets', 'icon.png'));
+  }
+  createWindow();
+});
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit();

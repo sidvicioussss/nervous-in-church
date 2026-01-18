@@ -21,8 +21,10 @@
   "build": {
     "appId": "com.nervous-in-church",
     "productName": "Nervous in Church",
+    "icon": "assets/icon.icns",
     "mac": {
-      "category": "public.app-category.productivity"
+      "category": "public.app-category.productivity",
+      "icon": "assets/icon.icns"
     }
   }
 }
